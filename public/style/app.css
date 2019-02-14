@@ -1,0 +1,17 @@
+.container.segment {
+	margin-top: 3.0em;
+}
+
+#deleteForm {
+	margin: 0; 
+	padding: 0;
+	display: inline;
+}
+
+.description{
+	margin-left:2.0em;
+}
+
+#readmoreBtn {
+	margin-left:2.0em;
+}

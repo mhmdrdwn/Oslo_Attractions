@@ -1,0 +1,24 @@
+<% include ./partials/header %>
+<div class="ui main text container segment">
+	<div class="ui huge header">New Place</div>
+	<form action="/places" method="POST" class="ui form">
+		<div class="field">
+			<label>Name of the place</label>
+			<input name="place[title]" placeholder="title" type="text">
+		</div>
+		<div class="field">
+			<label>Where is it?</label>
+			<input name="place[address]" placeholder="address" type="text">
+		</div>
+		<div class="field">
+			<label>Give us the url of the image</label>
+			<input name="place[image]" placeholder="image url" type="text">
+		</div>
+		<div class="field">
+			<label>More Information</label>
+			<textarea name="place[body]" placeholder="write information here"></textarea>
+		</div>
+			<input class="ui blue inverted button" type="submit">
+	</form>
+</div>
+<% include ./partials/footer %>

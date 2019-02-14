@@ -1,0 +1,23 @@
+<% include ./partials/header %>
+	<div class="ui main text container segment">
+		<div class="ui header"><%=place.title%></div>
+		<div class="ui top attached ">
+			<div class="item">
+                		<img class="ui centered rounded image" src="<%= place.image %>" >
+			</div>
+
+			<div class="description">	
+                		<span><%= place.body %></span>
+			</div>
+			
+			<div>
+	                        <a href="/places/<%= place._id%>/edit" class="ui green button">Edit</a>
+				<form id="deleteForm" action="/places/<%= place._id%>?_method=DELETE" method="POST">
+					
+					<button class="ui red button">Delete</button>	
+				</form>
+			</div>
+                </div>	
+		</div>
+<% include ./partials/footer %>
+
