@@ -1,7 +1,13 @@
 .container.segment {
 	margin-top: 3.0em;
 }
-
+.header {
+	font-size:20px;
+	margin:auto !important;
+}
+.segment {
+	margin-top:80px !important;
+}
 #deleteForm {
 	margin: 0; 
 	padding: 0;
